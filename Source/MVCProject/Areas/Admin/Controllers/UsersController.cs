@@ -1,4 +1,7 @@
-﻿using MVCProject.Infrastructure;
+﻿using MVCProject.Areas.Admin.ViewModels;
+using MVCProject.Infrastructure;
+using MVCProject.Models;
+using NHibernate.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +16,10 @@ namespace MVCProject.Areas.Admin.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View(new UsersIndex
+            {
+                Users = Database.Session.Query<User>().ToList()
+            });
         }
     }
 }

@@ -52,7 +52,6 @@ C:\Users\AKSEL\Desktop\Web Dersi Uygulama\MVCProject\MVCProject\bin\WebGrease.dl
 C:\Users\AKSEL\Desktop\Web Dersi Uygulama\MVCProject\MVCProject\bin\Antlr3.Runtime.pdb
 C:\Users\AKSEL\Desktop\Web Dersi Uygulama\MVCProject\MVCProject\bin\Newtonsoft.Json.xml
 C:\Users\AKSEL\Desktop\Web Dersi Uygulama\MVCProject\MVCProject\bin\System.Web.Optimization.xml
-C:\Git_Root\WebProgramming\Source\MVCProject\bin\ApplicationInsights.config
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\roslyn\csc.exe
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -106,4 +105,12 @@ C:\Git_Root\WebProgramming\Source\MVCProject\bin\System.Web.Helpers.xml
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\System.Web.Mvc.xml
 C:\Git_Root\WebProgramming\Source\MVCProject\obj\Debug\MVCProject.dll
 C:\Git_Root\WebProgramming\Source\MVCProject\obj\Debug\MVCProject.pdb
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\FluentMigrator.dll
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\Iesi.Collections.dll
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\NHibernate.dll
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\FluentMigrator.pdb
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\FluentMigrator.xml
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\Iesi.Collections.xml
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\NHibernate.xml
+C:\Git_Root\WebProgramming\Source\MVCProject\bin\MySql.Data.dll
 C:\Git_Root\WebProgramming\Source\MVCProject\obj\Debug\MVCProject.csprojResolveAssemblyReference.cache
