@@ -4,11 +4,11 @@
 }
 
 @helper SelectedTabClass (string tabName) { 
-if (tabName == ViewBag.SelectedTab)
-    {
-        @:active
+        if (tabName == ViewBag.SelectedTab)
+        {
+            @:active
+        }
     }
-}
 
 <html>
 <head>
@@ -19,14 +19,13 @@ if (tabName == ViewBag.SelectedTab)
 <body>
     <div class="container">
         <ul class="nav nav-pills">
-            <li class="@SelectedTabClass("Posts")>@Html.ActionLink("Posts","Index","Posts",new { area = "admin"}, new { })</li>
-            <li class="@SelectedTabClass("Users")>@Html.ActionLink("Users", "Index", "Users", new { area = "admin" }, new { })</li>
+            <li class="@SelectedTabClass("posts")">@Html.ActionLink("Posts", "Index", "Posts", new { area = "admin" }, new { })</li>
+            <li class="@SelectedTabClass("users")">@Html.ActionLink("Users", "Index", "Users", new { area = "admin" }, new { })</li>
             <li class="pull-right">@Html.RouteLink("Back to Home Page", "Home")</li>
         </ul>
+        @RenderBody()
     </div>
-    @RenderBody()
 
     @Scripts.Render("~/Admin/Scripts")
-    @RenderSection("Scripts",false)
 </body>
 </html>

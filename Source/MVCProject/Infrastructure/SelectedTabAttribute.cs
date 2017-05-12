@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MVCProject.Infrastructure
 {
-    
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class SelectedTabAttribute : ActionFilterAttribute
     {
         private readonly string _selectedTab;
