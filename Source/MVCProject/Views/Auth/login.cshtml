@@ -1,0 +1,21 @@
+﻿@model MVCProject.ViewModels.AuthLogin
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Login";
+}
+<p> Login View !</p>
+@using (Html.BeginForm())
+{
+        @Html.ValidationSummary()
+        <div>
+            @Html.LabelFor(x => x.UserName)
+            @Html.EditorFor(x => x.UserName)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Password)
+            @Html.EditorFor(x => x.Password)
+        </div>
+        <div>
+            <input type="submit" value="Login"/>
+        </div>
+}
