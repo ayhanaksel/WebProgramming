@@ -113,4 +113,3 @@ C:\Git_Root\WebProgramming\Source\MVCProject\bin\FluentMigrator.xml
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\Iesi.Collections.xml
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\NHibernate.xml
 C:\Git_Root\WebProgramming\Source\MVCProject\bin\MySql.Data.dll
-C:\Git_Root\WebProgramming\Source\MVCProject\obj\Debug\MVCProject.csprojResolveAssemblyReference.cache
