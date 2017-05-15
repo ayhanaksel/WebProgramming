@@ -1,4 +1,6 @@
-﻿using MVCProject.ViewModels;
+﻿using MVCProject.Models;
+using MVCProject.ViewModels;
+using NHibernate.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +18,25 @@ namespace MVCProject.Controllers
         }
 
         [HttpPost]
-        public ActionResult login(AuthLogin form)
+        public ActionResult login(AuthLogin form, string returnUrl)
         {
+            var user = Database.Session.Query<User>().FirstOrDefault(u => u.UserName == form.UserName);
+
+            if (user == null)
+                MVCProject.Models.User.FakeHash();
+
+            if (user == null || !user.CheckPassword(form.Password))
+                ModelState.AddModelError("Username", "Username or password is incorrect !");            
+
             if (!ModelState.IsValid)
             {
                 return View(form);
             }
+
             FormsAuthentication.SetAuthCookie(form.UserName, true);
+
+            if (!string.IsNullOrWhiteSpace(returnUrl))
+                return Redirect(returnUrl);
 
             return Content("Hi " + form.UserName);
         }

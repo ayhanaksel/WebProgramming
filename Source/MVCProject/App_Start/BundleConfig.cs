@@ -20,18 +20,20 @@ namespace MVCProject.App_Start
                 .Include("~/Content/Styles/Site.css")
                 );
 
-            bundles.Add(new ScriptBundle("~/Content/Scripts")
+            bundles.Add(new ScriptBundle("~/Admin/Scripts")
                 .Include("~/Scripts/jquery-1.8.0.js")
                 .Include("~/Scripts/jquery.validate.js")
                 .Include("~/Scripts/jquery.validate.unobtrusive.js")
                 .Include("~/Scripts/bootstrap.js")
+                .Include("~/Areas/Admin/Scripts/Form.js")
                 );
 
-            bundles.Add(new ScriptBundle("~/Content/Scripts")
+            bundles.Add(new ScriptBundle("~/Scripts")
                 .Include("~/Scripts/jquery-1.8.0.js")
                 .Include("~/Scripts/jquery.validate.js")
                 .Include("~/Scripts/jquery.validate.unobtrusive.js")
                 .Include("~/Scripts/bootstrap.js")
+                .Include("~/Areas/Admin/Scripts/Form.js")
                 );
         }
     }
